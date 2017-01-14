@@ -76,7 +76,6 @@ figure {
 .site-nav-item {
   float: left;
   width: 20%;
-  height: 60px;
   padding: 0.75em;
   font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.6em;
@@ -194,4 +193,83 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+/*Media Queries!*/
+
+@media (min-width: 768px){
+    body {
+      padding-bottom: 0;
+    }
+    main{
+    margin-left: 4em;
+  }
+    nav.site-nav {
+    top: 0;
+    padding-top: 3em;
+    display: block;
+    width: 4em;
+    position: fixed;
+}
+li.site-nav-item {
+    display: block;
+    clear: both;
+    padding-left: 0;
+    width: 100%
+}
+h1.site-logo {
+    z-index: 1000;
+    postion: fixed;
+    top: 0;
+    left: 0;
+    width: 45px;
+    padding-top: 5px;
+    padding-left: 4px;
+    margin-left: 5px;
+}
+p.movie-overview {
+    display: inline;
+}
+nav.footer-nav {
+    width: 50%;
+    float: left;
+}
+
+section.about {
+    width: 50%;
+    float: right;
+}
+footer.site-footer {
+    padding-left: 4em;
+}
+}
+
+@media (min-width: 992px){
+.movie:nth-child(n+2){
+  width:33.33333%;
+  float:left;
+  margin:0;
+}
+.movie:nth-child(n+2) .movie-backdrop{
+  display:none;
+}
+.movie:nth-child(n+2) .movie-poster{
+  display:block;
+}
+.movie:nth-child(n+2) .movie-details{
+  display:none;
+}
+.site-footer {
+  clear: both;
+}
+.movie:nth-child(n+17) .movie-poster{
+  position: relative;
+  top:-1em;
+}
+}
+
+@media (min-width: 1340px){
+  .movie-backdrop {
+    min-width: 100%;
+  }
 }
