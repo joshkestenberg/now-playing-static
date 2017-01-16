@@ -266,6 +266,14 @@ footer.site-footer {
   position: relative;
   top:-1em;
 }
+.movie:nth-child(n+14) .movie-details{
+  border: 0;
+  margin-bottom: 1em;
+}
+.movie:nth-child(15) .movie-details{
+  border: 0;
+  margin-bottom: 0em;
+}
 }
 
 @media (min-width: 1340px){
